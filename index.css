@@ -123,6 +123,7 @@ body {
   }
 }
 .main-canvas {
+  position: relative;
   background-image: url("./home-banner-bg.png");
   background: url(./home-banner-bg.png) no-repeat top center;
   -webkit-background-size: cover;
@@ -146,13 +147,14 @@ body {
   width: 10%;
 }
 .main-canvas-button {
+  position: absolute;
   color: white;
   position: absolute;
   padding: 20px;
   border-radius: 10px;
   background-color: #158cb4;
   border: none;
-  top: 42%;
+  top: 60%;
   left: 10%;
 }
 @media only screen and (min-width: 645px) {
@@ -181,17 +183,29 @@ body {
   font-weight: lighter;
 }
 
-@media only screen and (max-width: 335px) {
+@media only screen and (max-width: 465px) {
   .latest-news-text,
   .recent-projects-text {
     width: 75%;
   }
-  .recent-projects-navoptions{
-    width: 85%;
-    padding: 0;
-  }
 }
 
+@media only screen and (max-width: 768px){
+  .recent-projects-navoptions{
+    width: 90%;
+    font-size: 65%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2.5em;
+  }
+  .recent-projects-navoptions ui{
+    width: 90%;
+    padding: 0;
+    margin:-10px;
+    font-size: 14px;
+  }
+}
 .latest-news-cards {
   padding: 23px 7em;
   display: flex;
@@ -264,6 +278,7 @@ body {
   margin-bottom: 3em;
 }
 .recent-projects-navoptions {
+  font-size: 65%;
   width: 65%;
   margin: 0 auto;
   text-align: center;
@@ -413,6 +428,7 @@ body {
 .footer-bottom p {
   font-size: 60%;
   color: gray;
+  text-align: center;
   margin-left: 3px;
 }
 
@@ -516,10 +532,8 @@ body {
 }
 
 @media only screen and (max-width: 591px) {
-  .footer-social-icons i {
-    /* width: 90%; */
-    font-size: 120%;
-    padding: 10px;
+  .footer-bottom {
+    width: 100%;
   }
 }
 .footer-blue {
