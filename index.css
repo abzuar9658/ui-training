@@ -1,21 +1,15 @@
 html,
 body {
-  display: table;
+  /* display: table; */
   width: 100%;
   font-family: "Poppins", sans-serif;
   font-size: 25px;
   padding: 0;
   margin: 0;
   width: 100%;
+  /* overflow-y: hidden; */
 }
 
-@media only screen and (max-width: 402px) {
-  html,
-  body {
-    width: 114%;
-    overflow-y: hidden;
-  }
-}
 .top-nav {
   display: flex;
   justify-content: space-between;
@@ -24,7 +18,7 @@ body {
   border-bottom: 1px solid lightgrey;
 }
 .top-nav-phonenumber {
-  font-size: 75%;
+  font-size: 55%;
 }
 
 .top-nav-social-icons {
@@ -63,6 +57,7 @@ body {
 .navbar-navlinks {
   font-size: 50%;
 }
+
 .navbar-navlinks ui {
   margin: 8px;
 }
@@ -112,12 +107,12 @@ body {
     font-size: 18px;
   }
 }
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 767px) {
   .side-nav-icon {
     display: none;
   }
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 766px) {
   .navbar-navlinks {
     display: none;
   }
@@ -138,46 +133,50 @@ body {
 .main-canvas-text {
   display: inline-grid;
   position: absolute;
-  top: 18%;
+  top: 20%;
   left: 10%;
   color: white;
-  font-family: "Amatic SC", cursive;
+  font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 300%;
+  font-size: 200%;
   width: 10%;
 }
 .main-canvas-button {
   position: absolute;
   color: white;
   position: absolute;
+  font-size: 44%;
   padding: 20px;
   border-radius: 10px;
   background-color: #158cb4;
   border: none;
   top: 60%;
-  left: 10%;
+  left: 8%;
 }
-@media only screen and (min-width: 645px) {
+@media only screen and (min-width: 767px) {
   .main-canvas-button {
     background-color: tomato;
     display: none;
   }
 }
-@media only screen and (max-width: 645px) {
+@media only screen and (max-width: 766px) {
   .main-canvas-text {
+    margin-right: 10%;
     font-weight: 100;
-    font-size: 160%;
+    font-size: 90%;
+    top:35%;
     width: 10%;
   }
 }
 .latest-news-section,
 .recent-projects-section {
   font-family: "Dosis", sans-serif;
+  color: gray;
   margin-bottom: 7.5em;
 }
 .latest-news-text,
 .recent-projects-text {
-  width: 40%;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
   font-weight: lighter;
@@ -207,7 +206,7 @@ body {
   }
 }
 .latest-news-cards {
-  padding: 23px 7em;
+  padding: 23px 3em;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -223,15 +222,15 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 1093px) {
+/* @media only screen and (max-width: 1093px) {
   .latest-news-cards {
     padding: 23px 1em;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-}
-@media only screen and (max-width: 616px) {
+} */
+@media only screen and (max-width: 991px) {
   .latest-news-cards {
     padding: 23px 3.5em;
     display: flex;
@@ -338,6 +337,9 @@ body {
   height: 340px;
   width: 100%;
 }
+.project-item p {
+  margin-top: 15px;
+}
 .project-title {
   margin-bottom: -10px;
 }
@@ -392,10 +394,11 @@ body {
 }
 .user-details {
   margin-left: 20px;
+
 }
 .user-review-name {
   font-size: 90%;
-  margin-bottom: -12px;
+  margin-bottom: -1px;
 }
 .user-review-job-title {
   font-size: 75%;
@@ -523,11 +526,11 @@ body {
 
 .footer-social-icons i {
   width: 50px;
-  text-align: center;
-  font-size: 200%;
-  padding: 20px;
-  background-color: black;
-  color: white;
+    text-align: center;
+    font-size: 100%;
+    padding: 13px;
+    background-color: black;
+    color: white;
 }
 .footer-bottom-trademark{
   text-align: center;
